@@ -1,0 +1,356 @@
+/* @group GENERAL */
+* {box-sizing: border-box;}
+body {
+	font-family: 'Open Sans', sans-serif; 
+	background: url("../img/Wood-bg.jpg");
+	background-attachment: fixed; 
+	text-align: left; 
+	margin: 0 auto;
+	}
+ul {
+	margin: 0; 
+	padding: 0; 
+	list-style: none
+	}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0; 
+	padding: 0; 
+	text-align: center;
+	}
+h1 {
+	font-size: 1.6em;
+	padding: 30px 0;
+	background-color: #222b36;
+	color: #fff;
+	text-transform: uppercase;
+	}
+h2 {
+	font-size: 1.5em
+	}
+h3 {
+	text-align: left;
+	font-weight: normal;
+	color: #666;
+	margin-top: 30px;
+}			
+p {	
+	font-size: 1.4em; 
+	line-height: 1.4em; 
+	color: #bbb;
+	text-align: center;
+	}
+img {}
+/* @end GENERAL*/
+.container {
+	width: 90%;
+	margin: 30px auto;
+	padding: 30px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.doubleline {
+	margin: 40px 0 20px;
+	border-top: 5px solid #333;
+	border-bottom: 2px solid #333;
+	height:	12px	
+}
+.singleline {
+	margin: 30px 0;
+	border-bottom: 2px solid #333;
+	height:	6px	
+}
+/* @group Base Styles*/
+/* @end Base Styles */
+
+/* @group HEADER*/
+/* @end HEADER*/
+
+/* @group FORM */
+fieldset {
+	border: none;
+	padding: 0;
+}
+legend {
+	font-size: 1.6em;
+	font-weight: 600;
+	margin-bottom:  15px;
+	text-align: left;
+}
+label {
+	display: block;
+	margin: 15px 0 10px;
+	color: #666;
+	font-size: 1.2em;
+}
+
+input {
+	background: #ebecee;
+	border: none;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	padding: 15px 13px;
+	width: 100%;
+	color: #555;
+	text-align: left;
+	height: 50px;
+}
+
+select {
+	background: #ebecee;
+	border: none;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	width: 100%;
+	color: #555;
+	height: 50px;
+	font-size: .875rem;
+	padding: 15px 13px 15px 0;	
+	transition: box-shadow 0.5s ease, background-color 0.5s ease;	
+}
+
+select:hover {
+  background-color: #ddd;
+
+}
+
+input:hover, textarea:hover {
+	background-color: #ddd;
+}
+
+input#zip {
+	width: 50%;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	background: #ebecee;
+	border-radius: 5px;
+	color: #555;
+	height: 100px;
+	margin: 20px 0 30px;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: 2px solid #333;
+	transition: .3s ease-in-out;
+}
+/* https://css-tricks.com/snippets/css/style-placeholder-text/ */
+::-webkit-input-placeholder {
+	text-align: right;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	text-align: right;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	text-align: right;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+:-ms-input-placeholder {
+	text-align: right;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+
+[type="radio"],
+[type="checkbox"],
+[type="submit"] {
+  display: none;
+}
+
+[type="radio"] + label {
+  display: block;
+}
+
+[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 0;
+  background: #eee;
+  box-shadow: 0 0 0 0.15rem #eee;
+  margin-right: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+[type="radio"]:checked + label:before {
+  border: 3px solid white;
+  background: #416588;
+  box-shadow: 0 0 0 0.15em #416588;
+  width: .5em;
+  height: .5em;
+}
+
+[type="checkbox"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  border-radius: 20%;
+  border: 0;
+  background: #eee;
+  box-shadow: 0 0 0 0.15rem #eee;
+  margin-right: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+[type="checkbox"]:checked + label:before {
+  content: url(../img/checkmark.png);
+  box-shadow: 0 0 0 0.15em #416588;
+  width: 1em;
+  height: 1em;
+}
+
+p.pw {
+	text-align: left;
+	font-size: 0.8em;
+}
+
+/* ---- submit button styling ---- */
+
+button[type="submit"] {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  vertical-align: middle;
+  border-radius: 6px;
+  border: 0;
+  background-color: #4ebbb5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+
+/* ---- submit button hover ---- */
+
+button[type="submit"]:hover {
+  background-color: #3f9994;
+}
+
+
+
+/* @end FORM */
+
+/* @group FOOTER */
+footer {
+	margin: 80px 0 0;
+}
+footer p {
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 35px 0 0;
+	padding: 15px 0;
+	background-color: #222b36;
+	color: #fff;
+}
+
+/* @end FOOTER */
+
+/* @group MEDIA QUERIES */
+@media (min-width: 760px) {
+	h2 {
+		font-size: 1.8em;
+	}
+	h3 {
+		margin-top: 30px;
+	}
+	
+	.container {
+		width: 70%;
+		max-width: 800px;
+	}
+	.contact label {
+	  float: left;
+	  margin-top: 14px;
+	  width: 30%;
+	}
+	.contact input,
+	select {
+	  width: 70%;
+	  float: left;
+	}
+	.contact legend {
+		margin-bottom: 40px;
+	}
+	legend.newsletter {
+		margin-bottom: 0;
+	}
+	fieldset {
+		margin-top: 50px;
+	}
+	
+	footer p {
+		font-size: 1.1em;
+	}
+}
+
+@media (min-width: 1024px) {
+	h3 {
+		margin-top: 0;
+		font-size: 1em;
+	}
+	.container {
+		width: 70%;
+		max-width: 900px;
+	}
+
+	textarea {
+		height: 220px;
+	}
+	label {
+		font-size: 1em;;
+	}
+	.contact label {
+	  width: 36%;
+	}
+	.contact input,
+	select, input#zip {
+	  width: 64%;
+	}
+	
+	legend {
+		font-size: 1.4em;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	legend.newsletter {
+		margin-bottom: 30px;
+	}
+	h3.newsformat {
+		margin-top: 30px;
+	}
+	button {
+		margin-top: 20px;;
+	}
+	.col1 {
+		width: 50%;
+		padding-right: 2%;
+		float: left;
+		border-right: 1px solid #333;
+	} 
+	.col2 {
+		width: 48%;
+		float: right;
+	}
+}
